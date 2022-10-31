@@ -8,7 +8,7 @@ class MyExamplesController < ApplicationController
   def lotto_numbers
     lottery = []
     6.times do
-      number = rand(60)
+      number = rand(1..60)
       lottery << number
     end
     render json: { LotteryNumbers: lottery }
