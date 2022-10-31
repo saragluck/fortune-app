@@ -2,7 +2,7 @@ class MyExamplesController < ApplicationController
   def random_fortune
     index = rand(2)
     fortunes = ["You will be rich", "You will be poor", "You will be average"]
-    render json: { Your Fortune: fortunes[index] }
+    render json: { YourFortune: fortunes[index] }
   end
 
   def lotto_numbers
@@ -11,7 +11,7 @@ class MyExamplesController < ApplicationController
       number = rand(60)
       lottery << number
     end
-    render json: { Lottery Numbers: lottery }
+    render json: { LotteryNumbers: lottery }
   end
 
   def counter
@@ -35,6 +35,6 @@ class MyExamplesController < ApplicationController
         number = number - 1
       end
     end
-    render json: { The lyrics are: lyrics }
+    render json: { The_lyrics_are: lyrics }
   end
 end
